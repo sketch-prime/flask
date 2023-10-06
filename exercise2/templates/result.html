@@ -1,0 +1,20 @@
+    <!-- chatgpt assisted with this template, openai, chatgpt.com -->
+    <!-- https://www.w3schools.com/bootstrap/ assisted with the use of boostrap on this doc-->
+
+    {% extends "layout.html" %}
+
+    {% block title %}
+        Result
+    {% endblock %}
+    
+    {% block content %}
+        <h1 class="mt-5">Result</h1>
+        <div class="mt-3">
+            {% if result %}
+                <p class="lead">The number <strong>{{ number }}</strong> is {{ result }}.</p>
+            {% else %}
+                <p class="lead">No valid number provided.</p>
+            {% endif %}
+        </div>
+        <a href="/" class="btn btn-secondary mt-3">Go back home</a>
+    {% endblock %}

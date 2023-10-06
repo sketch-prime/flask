@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registered Users
+{% endblock %}
+
+{% block content %}
+    <h1>Registered Users</h1>
+    <ul>
+        {% for user, organization in registered_users.items() %}
+            <li>{{ user }} - {{ organization }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/" class="btn btn-secondary">Register More</a>
+{% endblock %}

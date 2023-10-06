@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date and Time</title>
+    <script>
+        function updateDateTime() {
+            const dateTimeElement = document.getElementById('datetime');
+            const currentTime = new Date();
+            dateTimeElement.innerHTML = `Current date and time: ${currentTime}`;
+        }
+
+        // Update date and time on page load
+        window.onload = updateDateTime;
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body>
+    <h1 id="datetime"></h1>
+</body>
+</html>
